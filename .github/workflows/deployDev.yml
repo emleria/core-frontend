@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/my-image:dev-latest, ghcr.io/${{ github.repository }}/my-image:dev-${{ github.run_id }}
+          tags: ghcr.io/${{ github.repository }}:dev-latest, ghcr.io/${{ github.repository }}:dev-${{ github.run_id }}
