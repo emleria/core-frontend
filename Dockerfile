@@ -9,6 +9,6 @@ RUN npm run build
 # Stage 2 - move .output server to a new image and run using node index.mjs
 FROM node:alpine
 WORKDIR /app
-COPY --from=builder /app/.output/server .
+COPY --from=builder /app/.output .
 EXPOSE 3000
-CMD ["node", "index.mjs"]
+CMD ["node", "server/index.mjs"]
