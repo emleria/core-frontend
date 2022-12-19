@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v2
       - name: Login to GitHub Container Registry
@@ -21,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/elmeria/core-frontend/my-image:dev-latest, ghcr.io/elmeria/core-frontend/my-image:dev-${{ github.run_id }}
+          tags: ghcr.io/${{ github.repository }}/my-image:dev-latest, ghcr.io/${{ github.repository }}/my-image:dev-${{ github.run_id }}
