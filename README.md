@@ -1,7 +1,9 @@
 # Documentation
 
 [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
+
 [Tailwind CSS documentation](https://tailwindcss.com/docs)
+
 [Pinia documentation](https://pinia.vuejs.org/introduction.html)
 
 ## Setup
