@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold underline">Hello Emleria</h1>
+    <span>Testing CI/CD workflow</span>
   </div>
 </template>
 

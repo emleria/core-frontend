@@ -25,7 +25,8 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository }}:dev-latest, ghcr.io/${{ github.repository }}:dev-${{ github.run_id }}
-      - uses: tale/kubectl-action@v1
+      - name: Login to Kubernetes
+        uses: tale/kubectl-action@v1
         with:
           base64-kube-config: ${{ secrets.KUBE_DEV_CONTEXT }}
       - name: Deploy to Kubernetes
