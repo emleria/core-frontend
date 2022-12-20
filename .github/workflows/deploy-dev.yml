@@ -1,0 +1,13 @@
+name: Deploy Dev Image to Kubernetes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tale/kubectl-action@v1
+        with:
+          base64-kube-config: ${{ secrets.KUBE_DEV_CONTEXT }}
+      - run: kubectl get pods
