@@ -29,4 +29,4 @@ jobs:
         with:
           base64-kube-config: ${{ secrets.KUBE_DEV_CONTEXT }}
       - name: Deploy to Kubernetes
-        run: kubectl set image deployment/core-frontend app=ghcr.io/${{ github.repository }}:dev-${{ github.run_id }}
+        run: kubectl set image deployment/core-frontend core-frontend=ghcr.io/${{ github.repository }}:dev-${{ github.run_id }}
