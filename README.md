@@ -1,3 +1,9 @@
+# Status
+
+## Dev
+
+[![Dev CI/CD](https://github.com/emleria/core-frontend/actions/workflows/build-dev.yml/badge.svg?branch=dev)](https://github.com/emleria/core-frontend/actions/workflows/build-dev.yml)
+
 # Documentation
 
 [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
