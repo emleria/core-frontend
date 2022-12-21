@@ -1,10 +1,10 @@
-# Status
+# core-frontend
 
-## Dev
+## Status
 
 [![Dev CI/CD](https://github.com/emleria/core-frontend/actions/workflows/build-dev.yml/badge.svg?branch=dev)](https://github.com/emleria/core-frontend/actions/workflows/build-dev.yml)
 
-# Documentation
+## Documentation
 
 [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
 
@@ -20,12 +20,12 @@ Make sure to install the dependencies:
 npm i
 ```
 
-## Development Server
+## Local Development
 
 Create a `.env` file in the root of the project and add the following:
 
 ```bash
-# .env
+#.env
 PORT=3000
 ```
 
